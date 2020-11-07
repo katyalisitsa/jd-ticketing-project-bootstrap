@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f5929c5-dbb0-4e3d-b65f-89464b67a485" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pending-task.html" beforeDir="false" afterPath="$PROJECT_DIR$/pending-task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-status.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-status.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-assign.html" beforeDir="false" afterPath="$PROJECT_DIR$/task-assign.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/welcome.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604762243889</updated>
-      <workItem from="1604762245853" duration="8890000" />
+      <workItem from="1604762245853" duration="9038000" />
     </task>
     <servers />
   </component>
