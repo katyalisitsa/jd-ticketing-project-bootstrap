@@ -247,7 +247,7 @@
 
                 <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
                 <label for="email" class="col-form-label">Email Address</label>
-                <input id="email" type="text" placeholder="email address" class="form-control form-control-sm">
+                <input id="email" type="text" placeholder="Email address" class="form-control form-control-sm">
                 </div>
 
                 <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
@@ -266,13 +266,14 @@
 
                 <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
                 <label for="passwordConfirm" class="col-form-label">Password Confirmation</label>
-                <input id="passwordConfirm" type="password" placeholder="re-enter password" class="form-control form-control-sm">
+                <input id="passwordConfirm" type="password" placeholder="Re-enter password" class="form-control form-control-sm">
               </div>
             </div>
 
               <div class="form-row">
 
                 <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
+                  <br>
                 <label class="col-form-label">Gender</label><br>
                 <label class="custom-control custom-radio custom-control-inline">
                   <input type="radio" name="radio-inline" class="custom-control-input"><span class="custom-control-label">Female</span>
@@ -285,26 +286,25 @@
 
                 <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
                     <div class="form-group">
-                      <label for="exampleFormControlSelect1">Role</label>
-                      <select class="form-control" id="exampleFormControlSelect1" size="small">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                      <br>
+                      <label for="roleId">Choose a Role</label>
+                      <select name="roleId" class="custom-select" id="roleId" required="required">
+                        <option value="select" selected>Select</option>
+                        <option value="admin">Admin</option>
+                        <option value="manager">Manager</option>
+                        <option value="employee">Employee</option>
                       </select>
                     </div>
                   </div>
+              </div>
 
-                <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
-                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                    <br>
-                    <button type="button" class="btn btn-primary btn-sm">Save</button>
+                  <div class="row">
+                    <div class="col-sm-4 col-lg-6 mb-3 mb-sm-0">
+                      <div class="float-right">
+                        <button class="btn btn-success rounded-8" type="submit">Save</button>
+                      </div>
+                    </div>
                   </div>
-                </div>
-
-                </div>
-
             </form>
               </div>
             </div>
@@ -315,18 +315,15 @@
             <!-- striped table -->
             <!-- ============================================================== -->
 
-            <br>
-            <div>
-              <div class="form-row">
-
-                <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
+          <div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="container-fluid dashboard-content">
+                  <div class="row">
+                  <div class="page-header">
+                    <h3 class="mb-2">User List</h3>
+                  </div>
                 </div>
-              </div>
 
-            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
-              <h3>&ensp; &ensp; User List</h3><br><br>
-             <div class="card">
-                <div class="card-body">
                   <table class="table table-striped">
                     <thead>
                     <tr>
@@ -340,41 +337,53 @@
                     </thead>
                     <tbody>
                     <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-warning btn-sm">Update</button>&ensp;&ensp;<button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+                      <td>Kate</td>
+                      <td>Katya@cvent.com</td>
+                      <td>Female</td>
+                      <td>7034563435</td>
+                      <td>Admin</td>
+                      <td>
+                        <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                        <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
+                      </td>
                     </tr>
                     <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-warning btn-sm">Update</button>&ensp;&ensp;<button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+                      <td>Zeynep</td>
+                      <td>Zeynep@secure.com</td>
+                      <td>Female</td>
+                      <td>7037862343</td>
+                      <td>Manager</td>
+                      <td>
+                        <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                        <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
                     </tr>
                     <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-warning btn-sm">Update</button>&ensp;&ensp;<button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+                      <td>Sevara</td>
+                      <td>Sevara@gmail.com</td>
+                      <td>Female</td>
+                      <td>7032435261</td>
+                      <td>User</td>
+                      <td>
+                        <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                        <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
+                      </td>
                     </tr>
                     <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-warning btn-sm">Update</button>&ensp;&ensp;<button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+                      <td>Yulia</td>
+                      <td>Yulia@gmail.com</td>
+                      <td>Female</td>
+                      <td>7036784634</td>
+                      <td>User</td>
+                      <td>
+                        <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                        <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
+                      </td>
                     </tr>
                     </tbody>
                   </table>
                </div>
               </div>
+          </div>
             </div>
             </div>
             <div class="row">
@@ -382,6 +391,7 @@
             <!-- end striped table -->
             <!-- ============================================================== -->
           </div>
+    </div>
         </div>
         <!-- ============================================================== -->
 
