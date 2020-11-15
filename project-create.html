@@ -217,7 +217,7 @@
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="page-header">
-              <h3 class="mb-2">User Create </h3>
+              <h3 class="mb-2">Project Create </h3>
             </div>
           </div>
         </div>
@@ -229,77 +229,63 @@
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <form>
 
-              <div class="form-row">
-
-                <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
-                  <label for="firstName" class="col-form-label">First Name</label>
-                  <input id="firstName" type="text" placeholder="First Name" class="form-control form-control-sm">
+                <div class="col-sm-7 col-lg-5 mb-5 mb-sm-0">
+                  <label for="projectName" class="col-form-label">Project Name</label>
+                  <input id="projectName" type="text" class="form-control form-control-sm">
                 </div>
 
-                <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
-                  <label for="lastName" class="col-form-label">Last Name</label>
-                  <input id="lastName" type="text" placeholder="Last Name" class="form-control form-control-sm">
-                </div>
+              <div class="col-sm-7 col-lg-5 mb-5 mb-sm-0">
+                <label for="projectCode" class="col-form-label">Project Code</label>
+                <input id="projectCode" type="text" class="form-control form-control-sm">
+              </div>
 
+              <div class="col-sm-7 col-lg-5 mb-5 mb-sm-0">
+                <br>
+                <label for="assignedManager">Assigned Manager</label>
+                <select name="assignedManager" class="custom-select" id="assignedManager" required="required">
+                  <option value="select" selected>Select</option>
+                  <option value="admin">Admin</option>
+                  <option value="manager">Manager</option>
+                  <option value="employee">Employee</option>
+                </select>
               </div>
 
               <div class="form-row">
 
-                <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
-                  <label for="email" class="col-form-label">Email Address</label>
-                  <input id="email" type="text" placeholder="Email address" class="form-control form-control-sm">
-                </div>
-
-                <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
-                  <label for="mobileNumber" class="col-form-label">Mobile Number</label>
-                  <input id="mobileNumber" type="text" placeholder="Mobile Number" class="form-control form-control-sm">
-                </div>
-
-              </div>
-
-              <div class="form-row">
-
-                <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
-                  <label for="password" class="col-form-label">Password</label>
-                  <input id="password" type="password" placeholder="Password" class="form-control form-control-sm">
-                </div>
-
-                <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
-                  <label for="passwordConfirm" class="col-form-label">Password Confirmation</label>
-                  <input id="passwordConfirm" type="password" placeholder="Re-enter password" class="form-control form-control-sm">
-                </div>
-              </div>
-
-              <div class="form-row">
-
-                <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
+                <div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
                   <br>
-                  <label class="col-form-label">Gender</label><br>
-                  <label class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" name="radio-inline" class="custom-control-input"><span class="custom-control-label">Female</span>
-                  </label>
-
-                  <label class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" name="radio-inline" class="custom-control-input"><span class="custom-control-label">Male</span>
-                  </label>
+                  <label for="startDate">Project Start Date</label>
+                  <div class="input-group date" id="startDate" data-target-input="nearest">
+                    <input type="text" class="form-control datetimepicker-input" placeholder="mm/dd/yyyy" data-target="#datetimepicker4" />
+                    <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                      <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
-                  <div class="form-group">
-                    <br>
-                    <label for="roleId">Choose a Role</label>
-                    <select name="roleId" class="custom-select" id="roleId" required="required">
-                      <option value="select" selected>Select</option>
-                      <option value="admin">Admin</option>
-                      <option value="manager">Manager</option>
-                      <option value="employee">Employee</option>
-                    </select>
+                <div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+                  <br>
+                  <label for="endDate">Project End Date</label>
+                  <div class="input-group date" id="endDate" data-target-input="nearest">
+                    <input type="text" class="form-control datetimepicker-input" placeholder="mm/dd/yyyy" data-target="#datetimepicker4" />
+                    <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                      <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                    </div>
                   </div>
                 </div>
               </div>
 
+
+
+              <div class="col-sm-7 col-lg-5 mb-5 mb-sm-0">
+                <br>
+                <label for="textArea">Project Detail</label>
+                <textarea class="form-control" id="textArea" rows="3"></textarea>
+              </div>
+
               <div class="row">
-                <div class="col-sm-4 col-lg-6 mb-3 mb-sm-0">
+                <div class="col-sm-4 col-lg-5 mb-3 mb-sm-0">
+                  <br>
                   <div class="float-right">
                     <button class="btn btn-success rounded-8" type="submit">Save</button>
                   </div>
@@ -327,53 +313,53 @@
             <table class="table table-striped">
               <thead>
               <tr>
-                <th scope="col">Name</th>
-                <th scope="col">E-Mail(username)</th>
-                <th scope="col">Gender</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Role</th>
+                <th scope="col">Project Code</th>
+                <th scope="col">Project Name</th>
+                <th scope="col">Start/End Date</th>
+                <th scope="col">Manager</th>
+                <th scope="col">Status</th>
                 <th scope="col">Action</th>
               </tr>
               </thead>
               <tbody>
               <tr>
-                <td>Kate</td>
-                <td>Katya@cvent.com</td>
-                <td>Female</td>
-                <td>7034563435</td>
-                <td>Admin</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td>
                   <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
                   <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
                 </td>
               </tr>
               <tr>
-                <td>Zeynep</td>
-                <td>Zeynep@secure.com</td>
-                <td>Female</td>
-                <td>7037862343</td>
-                <td>Manager</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td>
                   <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
                   <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
               </tr>
               <tr>
-                <td>Sevara</td>
-                <td>Sevara@gmail.com</td>
-                <td>Female</td>
-                <td>7032435261</td>
-                <td>User</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td>
                   <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
                   <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
                 </td>
               </tr>
               <tr>
-                <td>Yulia</td>
-                <td>Yulia@gmail.com</td>
-                <td>Female</td>
-                <td>7036784634</td>
-                <td>User</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td>
                   <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
                   <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
