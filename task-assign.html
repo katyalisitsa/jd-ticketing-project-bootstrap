@@ -214,18 +214,157 @@
         <!-- pageheader  -->
         <!-- ============================================================== -->
 
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-header">
+              <h3 class="mb-2">Task Assign</h3>
+            </div>
+          </div>
+        </div>
+
         <!-- ============================================================== -->
         <!-- end pageheader  -->
         <!-- ============================================================== -->
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <form>
+
+              <div class="col-sm-7 col-lg-5 mb-5 mb-sm-0">
+                <label for="project">Project</label>
+                <select name="project" class="custom-select" id="project" required="required">
+                  <option value="select" selected>Select</option>
+                  <option value="admin">Admin</option>
+                  <option value="manager">Manager</option>
+                  <option value="employee">Employee</option>
+                </select>
+              </div>
+
+              <div class="col-sm-7 col-lg-5 mb-5 mb-sm-0">
+                <br>
+                <label for="assignedEmployee">Assigned Employee</label>
+                <select name="assignedEmployee" class="custom-select" id="assignedEmployee" required="required">
+                  <option value="select" selected>Select</option>
+                  <option value="admin">Admin</option>
+                  <option value="manager">Manager</option>
+                  <option value="employee">Employee</option>
+                </select>
+              </div>
+
+              <div class="col-sm-7 col-lg-5 mb-5 mb-sm-0">
+                <label for="taskSubject" class="col-form-label">Task Subject</label>
+                <input id="taskSubject" type="text" class="form-control form-control-sm">
+              </div>
+
+
+              <div class="col-sm-7 col-lg-5 mb-5 mb-sm-0">
+                <br>
+                <label for="textAreaDetail">Detail</label>
+                <textarea class="form-control" id="textAreaDetail" rows="3"></textarea>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-4 col-lg-5 mb-3 mb-sm-0">
+                  <br>
+                  <div class="float-right">
+                    <button class="btn btn-success rounded-8" type="submit">Save</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ============================================================== -->
+      <!-- striped table -->
+      <!-- ============================================================== -->
+
+      <div>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="container-fluid dashboard-content">
+            <div class="row">
+              <div class="page-header">
+                <h3 class="mb-2">User List</h3>
+              </div>
+            </div>
+
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th scope="col">Project</th>
+                <th scope="col">Task Subject</th>
+                <th scope="col">Assigned Employee</th>
+                <th scope="col">Assigned Date</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                  <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                  <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                  <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                  <a href=""><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="row">
     <!-- ============================================================== -->
-
+    <!-- end striped table -->
     <!-- ============================================================== -->
   </div>
-  <!-- ============================================================== -->
-  <!-- end wrapper  -->
-  <!-- ============================================================== -->
+</div>
+</div>
+<!-- ============================================================== -->
+
+<!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- end wrapper  -->
+<!-- ============================================================== -->
 </div>
 <!-- ============================================================== -->
 <!-- end main wrapper  -->
@@ -242,7 +381,6 @@
 <!-- ============================================================== -->
 <!-- end footer -->
 <!-- ============================================================== -->
-
 
 <!-- Optional JavaScript -->
 <!-- jquery 3.3.1 -->
@@ -265,5 +403,6 @@
 <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
 <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
 <script src="assets/libs/js/dashboard-ecommerce.js"></script>
+</div>
 </body>
 </html>
